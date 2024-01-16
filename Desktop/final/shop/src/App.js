@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Items from './components/Items';
 import Categories from './components/Categories';
 import ShowFullItem from './components/ShowFullItem';
+import ThemeToggle from './components/ThemeToggle';
 
 
 
@@ -84,6 +85,7 @@ class App extends React.Component {
     return (
 
     <div className="wrapper">
+      <ThemeToggle/>
       <Header orders={this.state.orders} onDelete={this.deleteOrder}/>
       <Categories chooseCategory={this.chooseCategory}/>
       <Items onShowItem={this.onShowItem} items={this.state.currentItems} onAdd={this.addToOrder}/>

@@ -113,7 +113,8 @@ header .shop-cart .item .delete-icon:hover {
 
 header .presentation {
     font-family: "Noto Sans Georgian", sans-serif;
-    
+    border-radius: 12px;
+
     margin: 50px 0;
     background: url('./img/bg.jpg');
     width: 100%;
@@ -137,6 +138,7 @@ header .presentation::after{
 }
 
 
+
 header .presentation::before{
     content: 'დაბალი ფასებით';
     position: absolute;
@@ -147,6 +149,7 @@ header .presentation::before{
     font-weight: 500;
     color: rgb(255, 255, 255);
 }
+
 
 
 .categories div {
@@ -167,6 +170,7 @@ header .presentation::before{
 
 
 main {
+  margin-top: 40px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -175,6 +179,8 @@ main {
 }
 
 main .item {
+  border-radius: 0 0 8px 8px;
+
   position: relative;
   width: 30%;
   margin-bottom: 50px;
